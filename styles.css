@@ -1,9 +1,9 @@
 :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #ff6a3e;
-    --primaryLight: #ffba43;
-    --secondary: #ffba43;
-    --secondaryLight: #ffba43;
+    --primary: #A9A9A9;
+    --primaryLight: #D3D3D3;
+    --secondary: #A9A9A9;
+    --secondaryLight: #D3D3D3;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
@@ -16,10 +16,15 @@
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
 
+@font-face {
+  font-family: HelveticaNeue;
+  src: url(fonts/HelveticaNeue-Medium.otf);
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: "Ubuntu", sans-serif;
+    font-family: HelveticaNeue, sans-serif;
     font-style: normal;
 }
 
@@ -88,7 +93,7 @@ html {
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     background-color: rgba(26, 26, 26, 0.84);
-    position: fixed;
+    position: absolute;
     z-index: 10000;
     transition: background-color 0.3s;
   }
@@ -544,8 +549,8 @@ html {
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     padding: 0;
-    background-color: rgba(26, 26, 26, 0.84);
-    position: fixed;
+    background-color: rgba(26, 26, 26, 0);
+    position: absolute;
     z-index: 10000;
   }
   #cs-navigation .cs-top-bar {
@@ -718,7 +723,7 @@ html {
     /* prevents padding from adding to the width */
     box-sizing: border-box;
     padding: 0 2rem;
-    background-color: var(--primary);
+    background-color: black;
     color: #fff;
     display: inline-block;
     position: relative;
@@ -2028,11 +2033,6 @@ html {
     }
 }
 
-                                
-                                
-
-
-
 /* CONTACT PAGE */
 body.dark-mode .cs-button-solid {
     background-color: var(--secondaryLight);
@@ -2053,7 +2053,6 @@ body.dark-mode .cs-button-solid:before {
     min-width: 9.375rem;
     padding: 0 1.5rem;
     background-color: var(--primary);
-    border-radius: 0.25rem;
     display: inline-block;
     position: relative;
     z-index: 1;
