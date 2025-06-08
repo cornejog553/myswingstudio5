@@ -1000,9 +1000,11 @@ html {
     margin: 0;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    color: #1a1a1a;
+    padding: 1em 2.505rem;
+    background-color: black;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: .5rem;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -1669,16 +1671,23 @@ html {
   #cs-navigation.services-nav {
     background-color: #222222;
   }
-  #sbs-2348 {
+  #sbs-2348  {
     padding: var(--sectionPadding);
     /* 100px - 200px */
     padding-bottom: clamp(6.25rem, 8vw, 12.5rem);
+    padding-top: 6rem;
     padding-left: 0;
     padding-right: 0;
     /* clips anything overflowing */
     overflow: hidden;
     position: relative;
     z-index: 1;
+    background-color: #F1EEEC;
+  }
+  #sbs-2348 #services-title {
+    text-align: center;
+    font-size: 5rem;
+    max-width: 100%;
   }
   #sbs-2348 .cs-container {
     width: 100%;
@@ -1721,9 +1730,11 @@ html {
     text-decoration: none;
     min-width: 9.375rem;
     margin: 0;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    color: var(--bodyTextColorWhite);
+    padding: 1em 2.505rem;
+    background-color: black;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: .5rem;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -1793,8 +1804,10 @@ html {
   }
   #sbs-2333 {
     padding: var(--sectionPadding);
+    padding-top: 0;
     /* 100px - 200px */
-    padding-bottom: clamp(6.25rem, 8vw, 12.5rem);
+    /* padding-bottom: clamp(6.25rem, 8vw, 12.5rem); */
+    padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
     /* clips anything overflowing */
@@ -1843,9 +1856,11 @@ html {
     text-decoration: none;
     min-width: 9.375rem;
     margin: 0;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    color: var(--bodyTextColorWhite);
+    padding: 1em 2.505rem;
+    background-color: black;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: .5rem;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -3686,6 +3701,44 @@ body.dark-mode .cs-button-solid:before {
     #reviews-1334 .cs-background {
         width: 60vw;
     }
+}
+
+#card-pricing-1234 {
+  margin-bottom: 5rem;
+}
+
+#card-pricing-1234 .cs-title{
+  margin-bottom: 5rem;
+  text-align: center;
+  max-width: 100%;
+}
+
+#card-pricing-1234 .cs-container-pricing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#card-pricing-1234 .cs-container-pricing .cs-card {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.5rem 3rem;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#card-pricing-1234 .cs-container-pricing .cs-card .num-session {
+  font-size: 6.5rem;
+  margin-bottom: 1rem;
+}
+
+#instruction-training-header-pricing {
+  margin-top: 5rem;
+  border-top: 3px solid black;
+  font-size: 3rem;
 }
 
                                 
