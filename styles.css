@@ -1715,6 +1715,10 @@ html {
     position: relative;
     z-index: 3;
   }
+
+  #sbs-2348 .cs-content li {
+    margin: 1rem 0;
+  }
   #sbs-2348 .cs-text {
     margin-bottom: 1rem;
   }
