@@ -3782,6 +3782,7 @@ body.dark-mode .cs-button-solid:before {
   justify-content: space-between;
   flex-wrap: no-wrap;
   align-items: center;
+  max-width: 1285px;
 }
 
 @media only screen and (max-width: 1284px) {
