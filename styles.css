@@ -3742,19 +3742,25 @@ body.dark-mode .cs-button-solid:before {
 
 #card-pricing-1234 .cs-container-pricing {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 1rem;
+  flex-grow: 0;
 }
 
 #card-pricing-1234 .cs-container-pricing .cs-card {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 1.5rem 3rem;
   background-color: #fff;
   border: 1px solid black;
   border-radius: 5px;
+  height: auto;
+  width: 20rem;
+  flex-wrap: wrap;
 }
 
 #card-pricing-1234 .cs-container-pricing .cs-card .num-session {
