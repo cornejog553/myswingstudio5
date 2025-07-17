@@ -1837,6 +1837,7 @@ html {
     overflow: hidden;
     position: relative;
     z-index: 1;
+    background-color: #F1EEEC;;
   }
   #sbs-2333 .cs-container {
     width: 100%;
