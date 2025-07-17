@@ -1608,6 +1608,24 @@ html {
     z-index: -2;
   }
 }
+.hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.day-hours {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
+  width: 100%;
+}
+.right-align {
+  display: flex;
+  justify-content: flex-start;
+  width: 25rem;
+}
 /* Tablet - 768px */
 @media only screen and (min-width: 700px) {
   #footer-2395 .cs-ul {
@@ -1787,6 +1805,7 @@ html {
   #sbs-2348 .cs-content {
     /* 48px - 80px */
     padding: clamp(3rem, 6vw, 5rem) 0;
+    padding-bottom: 0;
   }
   #sbs-2348 .cs-picture {
     width: 43vw;
@@ -2948,7 +2967,7 @@ body.dark-mode .cs-button-solid:before {
   }
     #meet-team-1141 {
         padding: var(--sectionPadding);
-        padding-top: 10rem;
+        padding-top: 0;
         overflow: hidden;
     }
     #meet-team-1141 .cs-container {
@@ -2966,11 +2985,13 @@ body.dark-mode .cs-button-solid:before {
         /* set text align to left if content needs to be left aligned */
         text-align: center;
         width: 100%;
-        max-width: 33.875rem;
         display: flex;
         flex-direction: column;
         /* centers content horizontally, set to flex-start to left align */
         align-items: center;
+    }
+    #meet-the-team-text {
+      max-width: 100%;
     }
     #meet-team-1141 .cs-topper {
         font-size: var(--topperFontSize);
@@ -2994,7 +3015,7 @@ body.dark-mode .cs-button-solid:before {
         position: relative;
     }
     #meet-team-1141 .cs-title {
-        max-width: 20ch;
+        max-width: 100%;
     }
     #meet-team-1141 .cs-button-solid {
         font-size: 1rem;
@@ -3151,13 +3172,14 @@ body.dark-mode .cs-button-solid:before {
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 56.25rem) {
     #meet-team-1141 .cs-container {
-        max-width: 80rem;
+      padding-top: 0;
+        max-width: 200rem;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
     }
     #meet-team-1141 .cs-content {
         text-align: left;
-        width: 55%;
+        width: 100%;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -3746,6 +3768,50 @@ body.dark-mode .cs-button-solid:before {
   font-size: 3rem;
 }
 
+.team-members {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.team-member-container {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1284px) {
+  .team-member-container {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+}
+
+.team-members .team-member-container img {
+height: 350px;
+width: auto;
+}
+
+.team-member-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  width: auto;
+}
+
+.team-member-bio h3 {
+  margin-top: 0;
+}
                                 
 
                                 
