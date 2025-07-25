@@ -3805,8 +3805,9 @@ body.dark-mode .cs-button-solid:before {
 }
 
 .team-members .team-member-container img {
-height: 350px;
-width: auto;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
 }
 
 .team-member-bio {
