@@ -3810,6 +3810,12 @@ body.dark-mode .cs-button-solid:before {
   object-fit: cover;
 }
 
+.team-members .team-member-container .bottom-focus img {
+  height: 350px;
+  width: 350px;
+  object-fit: stretch;
+}
+
 .team-member-bio {
   display: flex;
   flex-direction: column;
