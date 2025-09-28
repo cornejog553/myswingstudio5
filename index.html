@@ -1,237 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="imgs/blackMlogo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="imgs/blackMlogo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>My Swing Studio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- ============================================ -->
-<!--                 Navigation                   -->
-<!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
 
-<header id="cs-navigation">
-    <div class="cs-container">
+    <header id="cs-navigation">
+      <div class="cs-container">
         <!--Nav Logo-->
         <a href="index.html" class="cs-logo" aria-label="back to home">
-            <img src="imgs/MySwingStudio+Logo+White.png" alt="My Swing Studio logo" width="197" height="43" aria-hidden="true" decoding="async">
+          <img
+            src="imgs/MySwingStudio+Logo+White.png"
+            alt="My Swing Studio logo"
+            width="197"
+            height="43"
+            aria-hidden="true"
+            decoding="async"
+          />
         </a>
         <!--Navigation List-->
         <nav class="cs-nav" role="navigation">
-            <!--Mobile Nav Toggle-->
-            <button class="cs-toggle" aria-label="mobile menu toggle">
-                <div class="cs-box" aria-hidden="true">
-                    <span class="cs-line cs-line1" aria-hidden="true"></span>
-                    <span class="cs-line cs-line2" aria-hidden="true"></span>
-                    <span class="cs-line cs-line3" aria-hidden="true"></span>
-                </div>
-            </button>
-            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how many there are-->
-            <div class="cs-ul-wrapper">
-                <ul id="cs-expanded" class="cs-ul">
-                    <!-- <li class="cs-li">
+          <!--Mobile Nav Toggle-->
+          <button class="cs-toggle" aria-label="mobile menu toggle">
+            <div class="cs-box" aria-hidden="true">
+              <span class="cs-line cs-line1" aria-hidden="true"></span>
+              <span class="cs-line cs-line2" aria-hidden="true"></span>
+              <span class="cs-line cs-line3" aria-hidden="true"></span>
+            </div>
+          </button>
+          <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how many there are-->
+          <div class="cs-ul-wrapper">
+            <ul id="cs-expanded" class="cs-ul">
+              <!-- <li class="cs-li">
                         <a href="index.html" class="cs-li-link cs-active">
                             Home
                         </a>
                     </li> -->
-                    <li class="cs-li">
-                        <a href="about.html" class="cs-li-link">
-                            About Us
-                        </a>
-                    </li>
-                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                    <li class="cs-li">
-                        <a href="index.html#sbs-2348" class="cs-li-link">
-                            Services
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="index.html#card-pricing-1234" class="cs-li-link">
-                            Pricing
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="index.html#meet-team-1141" class="cs-li-link">
-                            Meet the Team
-                        </a>
-                    </li>
-                    <!-- <li class="cs-li">
+              <li class="cs-li">
+                <a href="about.html" class="cs-li-link"> About Us </a>
+              </li>
+              <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+              <li class="cs-li">
+                <a href="index.html#sbs-2348" class="cs-li-link"> Services </a>
+              </li>
+              <li class="cs-li">
+                <a href="index.html#card-pricing-1234" class="cs-li-link">
+                  Pricing
+                </a>
+              </li>
+              <li class="cs-li">
+                <a href="index.html#meet-team-1141" class="cs-li-link">
+                  Meet the Team
+                </a>
+              </li>
+              <!-- <li class="cs-li">
                         <a href="meettheteam.html" class="cs-li-link">
                             The Team
                         </a>
                     </li> -->
-                    <li class="cs-li">
-                        <a href="contact.html" class="cs-li-link">
-                            Contact
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="index.html#cta-2400" class="cs-li-link">
-                            Gift Card
-                        </a>
-                    </li>
-                </ul>
-            </div>
+              <li class="cs-li">
+                <a href="contact.html" class="cs-li-link"> Contact </a>
+              </li>
+              <li class="cs-li">
+                <a href="index.html#cta-2400" class="cs-li-link"> Gift Card </a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <a href="https://app.squareup.com/appointments/book/smjs06lkx8e3md/LAJXXKF6J8R0B/start" class="cs-button-solid cs-nav-button">Reserve a bay</a>
+        <a
+          href="https://app.squareup.com/appointments/book/smjs06lkx8e3md/LAJXXKF6J8R0B/start"
+          class="cs-button-solid cs-nav-button"
+          >Reserve a bay</a
+        >
         <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
         <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
             <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
             <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
         </button> -->
-    </div>
-</header>
-<script>
-    // add classes for mobile navigation toggling
-    var CSbody = document.querySelector("body");
-    const CSnavbarMenu = document.querySelector("#cs-navigation");
-    const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
+      </div>
+    </header>
+    <script>
+      // add classes for mobile navigation toggling
+      var CSbody = document.querySelector("body");
+      const CSnavbarMenu = document.querySelector("#cs-navigation");
+      const CShamburgerMenu = document.querySelector(
+        "#cs-navigation .cs-toggle"
+      );
 
-    CShamburgerMenu.addEventListener('click', function() {
+      CShamburgerMenu.addEventListener("click", function () {
         CShamburgerMenu.classList.toggle("cs-active");
         CSnavbarMenu.classList.toggle("cs-active");
         CSbody.classList.toggle("cs-open");
         // run the function to check the aria-expanded value
         ariaExpanded();
-    });
+      });
 
-    // checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not 
-    function ariaExpanded() {
-        const csUL = document.querySelector('#cs-expanded');
-        const csExpanded = csUL.getAttribute('aria-expanded');
+      // checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not
+      function ariaExpanded() {
+        const csUL = document.querySelector("#cs-expanded");
+        const csExpanded = csUL.getAttribute("aria-expanded");
 
-        if (csExpanded === 'false') {
-            csUL.setAttribute('aria-expanded', 'true');
+        if (csExpanded === "false") {
+          csUL.setAttribute("aria-expanded", "true");
         } else {
-            csUL.setAttribute('aria-expanded', 'false');
+          csUL.setAttribute("aria-expanded", "false");
         }
-    }
+      }
 
-    // mobile nav toggle code
-    const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
-        for (const item of dropDowns) {
-            const onClick = () => {
-            item.classList.toggle('cs-active')
-        }
-        item.addEventListener('click', onClick)
-        }
-                                
-</script>  
+      // mobile nav toggle code
+      const dropDowns = Array.from(
+        document.querySelectorAll("#cs-navigation .cs-dropdown")
+      );
+      for (const item of dropDowns) {
+        const onClick = () => {
+          item.classList.toggle("cs-active");
+        };
+        item.addEventListener("click", onClick);
+      }
+    </script>
 
-<!-- ============================================ -->
-<!--                    Hero                      -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
 
-<section id="hero-1950">
-    <div class="cs-container">
+    <section id="hero-1950">
+      <div class="cs-container">
         <div class="cs-content">
-            <!-- <h1 class="cs-title">Welcome To My Swing Studio!</h1> -->
-            <!-- <div class="cs-flex-group">
+          <!-- <h1 class="cs-title">Welcome To My Swing Studio!</h1> -->
+          <!-- <div class="cs-flex-group">
                 <p class="cs-text">MY SWING STUDIO is a full service indoor golf studio located in the heart of Silicon Valley, providing personalized instruction and practice for all skill levels. </p>
                 <a href="https://app.squareup.com/appointments/book/smjs06lkx8e3md/LAJXXKF6J8R0B/start" class="cs-button-solid">Reserve a Bay</a>
             </div> -->
         </div>
-    </div>
+      </div>
 
-    <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
-    <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b1d9045e-be40-4ca3-92fa-b4d788c26500/public">
-        <source media="(min-width: 601px)" srcset="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b1d9045e-be40-4ca3-92fa-b4d788c26500/public">
-        <img decoding="async" srcset="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b1d9045e-be40-4ca3-92fa-b4d788c26500/public" alt="San Francisco Bay Indoor Golf" width="2250" height="1500" aria-hidden="true">
-    </picture>
-</section>
+      <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+      <picture class="cs-background">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b1d9045e-be40-4ca3-92fa-b4d788c26500/public
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b1d9045e-be40-4ca3-92fa-b4d788c26500/public
+          "
+        />
+        <img
+          decoding="async"
+          srcset="
+            https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b1d9045e-be40-4ca3-92fa-b4d788c26500/public
+          "
+          alt="San Francisco Bay Indoor Golf"
+          width="2250"
+          height="1500"
+          aria-hidden="true"
+        />
+      </picture>
+    </section>
 
-<!-- ============================================ -->
-<!--                Side By Side   About               -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                Side By Side   About               -->
+    <!-- ============================================ -->
 
-<section id="sbs-2291">
-    <div class="cs-container">
+    <section id="sbs-2291">
+      <div class="cs-container">
         <!-- Left Content Section-->
         <div class="cs-content">
-            <span class="cs-topper">About Us</span>
-            <!-- <h2 class="cs-title">Located in the heart of the Silicon Valley</h2> -->
-            <p class="cs-text">
-                MY SWING STUDIO is a full service indoor golf studio providing personalized instruction and practice for all ages and skill levels. Using state of the art Foresight GCquad Rangex launch monitor technology featuring ball and club head data, our goal is to provide a tailored golf program to fit the specific goals of each individual.
-
-Our philosophy is that playing better golf makes the game more enjoyable. Not all individuals have the same physical abilities, so here at MY SWING STUDIO it's our job to help everyone uncover their strengths and weaknesses and together build a solid foundation for the movements required for an effective golf swing.
-            </p>
-            <a class="cs-button-solid" aria-label="learn more about our services" href="index.html#sbs-2348">Services</a>
+          <span class="cs-topper">About Us</span>
+          <!-- <h2 class="cs-title">Located in the heart of the Silicon Valley</h2> -->
+          <p class="cs-text">
+            MY SWING STUDIO is a full service indoor golf studio providing
+            personalized instruction and practice for all ages and skill levels.
+            Using state of the art Foresight GCquad Rangex launch monitor
+            technology featuring ball and club head data, our goal is to provide
+            a tailored golf program to fit the specific goals of each
+            individual. Our philosophy is that playing better golf makes the
+            game more enjoyable. Not all individuals have the same physical
+            abilities, so here at MY SWING STUDIO it's our job to help everyone
+            uncover their strengths and weaknesses and together build a solid
+            foundation for the movements required for an effective golf swing.
+          </p>
+          <a
+            class="cs-button-solid"
+            aria-label="learn more about our services"
+            href="index.html#sbs-2348"
+            >Services</a
+          >
         </div>
         <!-- Right Image Section -->
         <div class="cs-image-group">
-            <!--Floating Box-->
-            <!-- <div class="cs-box">
+          <!--Floating Box-->
+          <!-- <div class="cs-box">
                 <span class="cs-number">300+</span>
                 <div class="cs-flex">
                     <h3 class="cs-heading">Virtual Courses</h3>
                     <span class="cs-desc">To Help You Hone Your Game</span>
                 </div>
             </div> -->
-            <!--Image-->
-            <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/ef699d49-e8e3-460e-6810-df68ed441b00/public">
-                <source media="(min-width: 601px)" srcset="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/ef699d49-e8e3-460e-6810-df68ed441b00/public">
-                <img loading="lazy" decoding="async" src="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/ef699d49-e8e3-460e-6810-df68ed441b00/public" alt="meeting" width="630" height="630" aria-hidden="true">
-            </picture>
+          <!--Image-->
+          <picture class="cs-picture">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/ef699d49-e8e3-460e-6810-df68ed441b00/public
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/ef699d49-e8e3-460e-6810-df68ed441b00/public
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/ef699d49-e8e3-460e-6810-df68ed441b00/public"
+              alt="meeting"
+              width="630"
+              height="630"
+              aria-hidden="true"
+            />
+          </picture>
         </div>
-    </div>
-</section>
-
-<!-- ============================================ -->
-<!--                 Side By Side  Services               -->
-<!-- ============================================ -->
-
-<section id="sbs-2348">
-    <h2 id="services-title" class="cs-title">Services</h2>
-    <div class="cs-container">
-        <div class="cs-content">
-            <!-- <span class="cs-topper">About Us</span> -->
-            <h2 class="cs-title">Practice</h2>
-            <p class="cs-text">
-                Rangex golf technology offers a cutting-edge solution for golfers aiming to enhance their game through precise data analysis. Utilizing a patented ‘eXact Raw’ algorithm and a custom-built Triple Camera system, Rangex captures detailed 3D data on both ball flight and club movement, surpassing traditional doppler radar and camera-based devices in accuracy . This includes real-time measurements of ball speed, launch angle, spin rate, and club path, providing golfers with comprehensive insights into their performance . The system also features visual data tools, such as swing motion comparisons and shot history, enabling players to identify and address specific areas for improvement . With an intuitive user interface and customizable training environments, Rangex empowers golfers to focus solely on their swing, making practice sessions more efficient and effective.
-            </p>
-            <ul>
-                <li>1 Person per bay</li>
-                <li>Golfers must bring in their own clubs. Rental clubs will not be provided.</li>
-            </ul>
-            <a href="https://app.squareup.com/appointments/book/smjs06lkx8e3md/LAJXXKF6J8R0B/start" class="cs-button-solid">Reserve a Bay</a>
-        </div>
-        <picture class="cs-picture">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" src="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b1d9045e-be40-4ca3-92fa-b4d788c26500/public">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" src="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b1d9045e-be40-4ca3-92fa-b4d788c26500/public">
-            <img loading="lazy" decoding="async" src="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b1d9045e-be40-4ca3-92fa-b4d788c26500/public" alt="building" width="1280" height="568">
-        </picture>
-    </div>
+      </div>
+    </section>
 
     <!-- ============================================ -->
-<!--                Meet The Team                 -->
-<!-- ============================================ -->
+    <!--                 Side By Side  Services               -->
+    <!-- ============================================ -->
 
-<section id="meet-team-1141">
-    <div class="cs-container">
+    <section id="sbs-2348">
+      <h2 id="services-title" class="cs-title">Services</h2>
+      <div class="cs-container">
         <div class="cs-content">
+          <!-- <span class="cs-topper">About Us</span> -->
+          <h2 class="cs-title">Practice</h2>
+          <p class="cs-text">
+            Rangex golf technology offers a cutting-edge solution for golfers
+            aiming to enhance their game through precise data analysis.
+            Utilizing a patented ‘eXact Raw’ algorithm and a custom-built Triple
+            Camera system, Rangex captures detailed 3D data on both ball flight
+            and club movement, surpassing traditional doppler radar and
+            camera-based devices in accuracy . This includes real-time
+            measurements of ball speed, launch angle, spin rate, and club path,
+            providing golfers with comprehensive insights into their performance
+            . The system also features visual data tools, such as swing motion
+            comparisons and shot history, enabling players to identify and
+            address specific areas for improvement . With an intuitive user
+            interface and customizable training environments, Rangex empowers
+            golfers to focus solely on their swing, making practice sessions
+            more efficient and effective.
+          </p>
+          <ul>
+            <li>1 Person per bay</li>
+            <li>
+              Golfers must bring in their own clubs. Rental clubs will not be
+              provided.
+            </li>
+          </ul>
+          <a
+            href="https://app.squareup.com/appointments/book/smjs06lkx8e3md/LAJXXKF6J8R0B/start"
+            class="cs-button-solid"
+            >Reserve a Bay</a
+          >
+        </div>
+        <picture class="cs-picture">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            src="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b1d9045e-be40-4ca3-92fa-b4d788c26500/public"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            src="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b1d9045e-be40-4ca3-92fa-b4d788c26500/public"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b1d9045e-be40-4ca3-92fa-b4d788c26500/public"
+            alt="building"
+            width="1280"
+            height="568"
+          />
+        </picture>
+      </div>
+
+      <!-- ============================================ -->
+      <!--                Meet The Team                 -->
+      <!-- ============================================ -->
+
+      <section id="meet-team-1141">
+        <div class="cs-container">
+          <div class="cs-content">
             <div class="cs-flex">
-                <span class="cs-topper">THE TEAM</span>
-                <h2 class="cs-title">Meet The Team Behind My Swing Studio</h2>
-                <p id="meet-the-team-text" class="cs-text">At My Swing Studio, our team of experienced coaches is dedicated to helping you take your game to the next level. We combine expert guidance with powerful data and technology to give you clear, measurable improvement. Whether you’re a beginner or a low-handicap player, our coaches are here to support your progress with personalized instruction, real-time feedback, and a passion for the game.</p>
+              <span class="cs-topper">THE TEAM</span>
+              <h2 class="cs-title">Meet The Team Behind My Swing Studio</h2>
+              <p id="meet-the-team-text" class="cs-text">
+                At My Swing Studio, our team of experienced coaches is dedicated
+                to helping you take your game to the next level. We combine
+                expert guidance with powerful data and technology to give you
+                clear, measurable improvement. Whether you’re a beginner or a
+                low-handicap player, our coaches are here to support your
+                progress with personalized instruction, real-time feedback, and
+                a passion for the game.
+              </p>
             </div>
             <a href="contact.html" class="cs-button-solid">Contact Us</a>
-        </div>
-        <!-- <ul class="cs-card-group">
+          </div>
+          <!-- <ul class="cs-card-group">
             <li class="cs-item">
                 <picture class="cs-picture"> -->
-                    <!--Mobile Image-->
-                    <!-- <source media="(max-width: 600px)" src="imgs/DSC09064.jpg"> -->
-                    <!--Tablet and above Image-->
-                    <!-- <source media="(min-width: 601px)" src="imgs/DSC09064.jpg">
+          <!--Mobile Image-->
+          <!-- <source media="(max-width: 600px)" src="imgs/DSC09064.jpg"> -->
+          <!--Tablet and above Image-->
+          <!-- <source media="(min-width: 601px)" src="imgs/DSC09064.jpg">
                     <img loading="lazy" decoding="async" src="imgs/DSC09064.jpg" alt="person" width="305" height="407">
                 </picture>
                 <div class="cs-info">
@@ -241,10 +340,10 @@ Our philosophy is that playing better golf makes the game more enjoyable. Not al
             </li>
             <li class="cs-item">
                 <picture class="cs-picture"> -->
-                    <!--Mobile Image-->
-                    <!-- <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1591491640784-3232eb748d4b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29sZmVyfGVufDB8fDB8fHww"> -->
-                    <!--Tablet and above Image-->
-                    <!-- <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1591491640784-3232eb748d4b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29sZmVyfGVufDB8fDB8fHww">
+          <!--Mobile Image-->
+          <!-- <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1591491640784-3232eb748d4b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29sZmVyfGVufDB8fDB8fHww"> -->
+          <!--Tablet and above Image-->
+          <!-- <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1591491640784-3232eb748d4b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29sZmVyfGVufDB8fDB8fHww">
                     <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1591491640784-3232eb748d4b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29sZmVyfGVufDB8fDB8fHww" alt="person" width="305" height="407">
                 </picture>
                 <div class="cs-info">
@@ -253,277 +352,382 @@ Our philosophy is that playing better golf makes the game more enjoyable. Not al
                 </div>
             </li>
         </ul> -->
-    </div>
-</section>
-<div class="team-members">
-            <div class="team-member-container">
-                <div class="team-member-image">
-                    <img src="imgs/DChoMeetTheTeam.jpg" alt="">
-                </div>
-                <div class="team-member-bio">
-                    <h3>Daniel Cho – Professional Golf Instructor | Founder of My Swing Studio</h3>
-                    <p class="cs-text">Daniel Cho is a Professional Golf Instructor and the founder of My Swing Studio, a state-of-the-art indoor training facility located in San Carlos, CA. With over 25 years of experience in the game, Daniel combines a successful professional playing career with over a decade of coaching expertise.
-
-                    He competed at the highest levels of junior and collegiate golf, earning tour cards on the Korean PGA (KPGA), China Tour, Asian Tour, and PGA Tour Canada. Daniel now brings that high-level experience to his students, offering a coaching style that blends advanced technology with a deep understanding of swing mechanics, performance, and competitive mindset.
-
-                    Through personalized instruction and data-driven feedback, Daniel helps golfers of all levels—from beginners to aspiring professionals—elevate their game with purpose and precision.
-
-                    <br><br>Contact info:<br><br>
-
-                    213-713-4242 <br><br>
-                    <a href="mailto:Dcho@myswingstudio.com">Dcho@myswingstudio.com</a></p>
-                </div>
-            </div>
-
-            <div class="team-member-container">
-                <div class="team-member-image">
-                    <img src="imgs/JPonceMeetTheTeam.jpg" alt="">
-                </div>
-                <div class="team-member-bio">
-                    <h3>Jeffrey A. Ponce – Professional Golf Instructor</h3>
-                    <p class="cs-text">A proud graduate of the University of Nevada Las Vegas, Professional Golf Management program and a Class A PGA Professional, Jeff brings 8 years with over 10,000 lessons taught of experience to the lesson tee. Using advanced tools such as video analysis and various launch monitors, Jeff is committed to helping golfers of all levels improve their game.
-
-                    Having competed in amateur tournaments and played at the college level, Jeff combines personal experience with a passion for teaching. Additionally, he is skilled in club fitter, working with major golf brands to ensure each player has the right equipment for their game.
-
-                    Driven by a love for the sport and a desire to see players improve, Jeff enjoys guiding golfers on their journey, helping them unlock their full potential and achieve their goals on the course.
-
-                    <br><br>Contact Info:<br><br>
-
-                    650-922-3794</p><br><br>
-                    <a href="mailto:jeffrey.ponce@pga.com">jeffrey.ponce@pga.com</a></p>
-                </div>
-            </div>
-
-            <div class="team-member-container">
-                <div class="team-member-image">
-                    <img src="imgs/NatalieCoach.png" alt="">
-                </div>
-                <div class="team-member-bio">
-                    <h3>Natalie Park – Professional Golf Instructor</h3>
-                    <p class="cs-text">Natalie is a member of the LPGA, a dedicated golf instructor, and a former NCAA award-winning athlete with over 13 years of experience teaching students of all ages and skill levels. <br><br>
-
-                        Her comprehensive, solution-based lessons include full swing, short game, and putting; video analysis, equipment assessment, and a TPI golf fitness assessment as needed.<br><br>
-
-                        At the core of her approach is the belief that no single swing method works for everyone. Whether you are a first time student, aspiring golf athlete, or an experienced player looking to improve your next game, Natalie focuses on helping you achieve your goals through personalized lessons that highlight your unique strengths. She tailors each lesson to your physical structure while training and coaching the mental, physical, and technical aspects of the game. With practical and informative guidance, Natalie empowers you to excel on the course and enables you to unlock your potential. <br><br>
-
-                        Lessons in Korean are also available. 한국말 레슨 가능합니다.<br><br>
-
-                        Book your lesson at <a href="https://natalieparkgolf.com">natalieparkgolf.com</a> <br><br>
-                        For questions, email <a href="mailto:natalieparkgolf@gmail.com">natalieparkgolf@gmail.com</a> <br><br>
-                        Follow on Instagram: <a href="https://www.instagram.com/natalieparkgolf">@natalieparkgolf</a></p>
-                </div>
-            </div>
-
-            <div class="team-member-container">
-                <div class="team-member-image">
-                    <img src="imgs/ThomasHutchinsonCoach.jpg" alt="">
-                </div>
-                <div class="team-member-bio">
-                    <h3>Thomas Hutchison – Professional Golf Instructor</h3>
-                    <p class="cs-text">Thomas Hutchison, a graduate from UC Davis, is a current Tour Pro and Professional Golf instructor. He has 20 years of golf experience from competing at the highest collegiate level and receiving All American Honors to earning his card on PGA Tour Americas. Dedicated to the game, Tom spent his occasional bye weeks instructing collegiate players on their game as he stepped in as UC Davis’ Assistant Men’s Golf coach and Recruitment Coordinator. <br><br>
-
-                    Tom combines his thorough understanding of swing mechanics, strategy, and advanced technology to level up your game. Whether your goal is to show off to your buddies or prepare for competition golf, Tom has experience with it all. <br><br>
-
-                    Contact info:<br><br>
-                    +1 (408) 693-6119<br><br>
-
-                    <a href="mailto:thomashutchison99@gmail.com">thomashutchison99@gmail.com</a></p>
-                </div>
-            </div>
-
-            <div class="team-member-container">
-                <div class="team-member-image">
-                    <img src="imgs/Keigo'25.profile.pic.jpg" alt="Golf Coach Keigo">
-                </div>
-                <div class="team-member-bio">
-                    <h3>Keigo Painter – Professional Golf Instructor</h3>
-                    <p class="cs-text">Keigo is a professional golf instructor with over 10 years of experience, including
-                        training and competing at an elite level. He graduated from the prestigious Hills
-                        Educational Foundation in Australia alongside <span style="font-weight: bold;">former World No. 1 Jason Day</span>, later
-                        training with him in Orlando and occasionally caddying for him. Keigo played on the
-                        Asian circuit, has multiple mini tour wins around the world, and was the Northern
-                        California Junior College Champion. He also competed in an event on what is now
-                        known as the Korn Ferry Tour. <br><br>
-                        He worked closely with <span style="font-weight: bold;">legendary coach Phil Ritson</span> during the later part of his
-                        career—<span style="font-weight: bold;">one of the key figures in shaping modern-day golf instruction</span>. Keigo’s
-                        teaching style is <span style="font-weight: bold;">calm, focused, and fun</span>, with a strong emphasis on communication
-                        and building trust. He helps students develop their swing naturally without
-                        overcomplicating the game. Instruction is offered in both English and Japanese.<br><br>
-
-                        Contact Info:<br><br>
-
-                        415-802-4043<br><br>
-
-                        <a href="mailto:kpainter2412@yahoo.com">kpainter2412@yahoo.com</a></p>
-                </div>
-            </div>
-
-            <div class="team-member-container">
-                <div class="team-member-image">
-                    <img src="imgs/CalvinGongMeettheTeam.jpg" alt="">
-                </div>
-                <div class="team-member-bio">
-                    <h3>Calvin Gong – Professional Chiropractor | TPI Professional</h3>
-                    <p class="cs-text">Calvin Gong is a TPI-certified chiropractor who has been in practice since 1992. 
-                    In addition to his chiropractic practice, he is a TPI professional for Green Hills GC Academy, the medical/wellness director for The First Tee of San Francisco at Harding Park, and has previously worked as the chiropractor for the sports medicine department at Saint Ignatius College Preparatory in San Francisco. 
-                    He remains a source for the Saint Ignatius College Preparatory varsity girls' and boys' golf teams. 
-                    He works with many junior players in the JTNC, JGANC, HJGT, and AGJA circuits, local D1 collegiate players, as well as members from several Bay Area courses - Presidio, Lake Merced, Olympic, San Francisco, Cal, Peninsula, and Green Hills golf clubs, to name a few. 
-                    He has experience working with Symmetra tour and LPGA Q-school qualifying players. As a TPI-certified chiropractor, Calvin has first-hand knowledge of spinal and extremities biomechanics and how they relate to the Big 12 Swing Characteristics. 
-                    His main goal for each golfer is to help golfers avoid injury while improving their swing. 
-                    Prior to each session, he will request a few swing videos, consult with the golfer about their health and injury history, and what their overall goal is from this screening. 
-                    Each individual golfer is then given a customized screen and prescribed a TPI-specific medical/fitness protocol. <br><br>
-
-                    Contact Info:<br><br>
-
-                    +1 (650) 384-3474<br><br>
-
-                    <!-- <a href="mailto:dr.calvin@atlashealthcenter.net">dr.calvin@atlashealthcenter.net</a></p> -->
-                </div>
-            </div>
-
-            <div class="team-member-container">
-                <div class="team-member-image bottom-focus">
-                    <img src="imgs/GrantParr.png" alt="Grant Parr Performance Coach San Francisco Bay Area">
-                </div>
-                <div class="team-member-bio">
-                    <h3>Grant Parr – Performance Coach</h3>
-                    <p class="cs-text">Grant Parr, M.A. is a Mental Performance Coach who transforms golfers' games from the inside out.<br><br>
-
-                    
-
-                    His specialized approach combines cutting-edge mental performance techniques with deep golf expertise to help players of all levels break through their mental barriers and achieve lower scores.<br><br>
-
-                    
-
-                    With extensive experience in sport psychology, Grant has worked with golfers ranging from promising juniors to collegiate athletes and tour professionals. His proven methodology helps players master the most challenging aspects of golf: managing tournament pressure, recovering from setbacks, and performing consistently under stress.<br><br>
-
-                    
-
-                    Grant's journey in sports and mental performance began early, competing at high levels across multiple sports before focusing on the mental game that makes champions. After earning his Master's degree in Sport Psychology, he discovered his true calling: helping athletes master the mental side of golf - where a single shot can change everything, and mental fortitude means the difference between breaking par and breaking down.<br><br>
-
-                    
-
-                    What sets Grant apart is his ability to translate complex mental performance concepts into practical, on-course strategies that work. His approach helps golfers build lasting confidence and emotional control that serves them both on and off the course, turning mental challenges into opportunities for growth.<br><br>
-
-                    Grant Parr M.A.<br><br>
-
-                    Mental Performance Coach<br><br>
-
-                    Contact Info:<br><br>
-
-                    +1 (650) 384-3474<br><br>
-
-                    <!-- <a href="mailto:grant@gamefaceperformance.com">grant@gamefaceperformance.com</a></p><br><br> -->
-                    <!-- <a href="https://www.gamefaceperformance.com">www.gamefaceperformance.com</a></p> -->
-                </div>
-            </div>
-            
         </div>
-</section>
-
-<!-- ============================================ -->
-<!--                 Side By Side  Services Reverse               -->
-<!-- ============================================ -->
-
-<section id="sbs-2333">
-    <div class="cs-container">
-        <div class="cs-content">
-            <!-- <span class="cs-topper">About Us</span> -->
-            <h2 class="cs-title">Instruction</h2>
+      </section>
+      <div class="team-members">
+        <div class="team-member-container">
+          <div class="team-member-image">
+            <img src="imgs/DChoMeetTheTeam.jpg" alt="" />
+          </div>
+          <div class="team-member-bio">
+            <h3>Daniel Cho – Coach | Founder of My Swing Studio</h3>
             <p class="cs-text">
-                We provide personalized golf instruction utilizing video analysis and ball and club head data to track your performance. This provides an optimal learning environment where you can see your improvements in real time and better understand what's going on in the golf swing. Resulting in a more enjoyable time on the course.<br><br>
-                Our first step in building an instruction plan is with an Intro Session – where we evaluate your swing, assess your game, and set a custom program together to reach your goals. In order to book an Intro Session, please contact us.
+              Daniel Cho is a Coach and the founder of My Swing Studio, a
+              state-of-the-art indoor training facility located in San Carlos,
+              CA. With over 25 years of experience in the game, Daniel combines
+              a successful professional playing career with over a decade of
+              coaching expertise. He competed at the highest levels of junior
+              and collegiate golf, earning tour cards on the Korean PGA (KPGA),
+              China Tour, Asian Tour, and PGA Tour Canada. Daniel now brings
+              that high-level experience to his students, offering a coaching
+              style that blends advanced technology with a deep understanding of
+              swing mechanics, performance, and competitive mindset. Through
+              personalized instruction and data-driven feedback, Daniel helps
+              golfers of all levels—from beginners to aspiring
+              professionals—elevate their game with purpose and precision.
+
+              <br /><br />Contact info:<br /><br />
+
+              <a href="mailto:Dcho@myswingstudio.com">Dcho@myswingstudio.com</a>
             </p>
-            <!-- <a href="https://app.squareup.com/appointments/book/smjs06lkx8e3md/LAJXXKF6J8R0B/start" class="cs-button-solid">Reserve a Bay</a> -->
+          </div>
+        </div>
+
+        <div class="team-member-container">
+          <div class="team-member-image">
+            <img src="imgs/JPonceMeetTheTeam.jpg" alt="" />
+          </div>
+          <div class="team-member-bio">
+            <h3>Jeffrey A. Ponce – Coach</h3>
+            <p class="cs-text">
+              A proud graduate of the University of Nevada Las Vegas,
+              Professional Golf Management program and a Class A PGA
+              Professional, Jeff brings 8 years with over 10,000 lessons taught
+              of experience to the lesson tee. Using advanced tools such as
+              video analysis and various launch monitors, Jeff is committed to
+              helping golfers of all levels improve their game. Having competed
+              in amateur tournaments and played at the college level, Jeff
+              combines personal experience with a passion for teaching.
+              Additionally, he is skilled in club fitter, working with major
+              golf brands to ensure each player has the right equipment for
+              their game. Driven by a love for the sport and a desire to see
+              players improve, Jeff enjoys guiding golfers on their journey,
+              helping them unlock their full potential and achieve their goals
+              on the course.
+
+              <br /><br />Contact Info:<br /><br />
+
+              650-922-3794
+            </p>
+            <p>
+              <a href="mailto:jeffrey.ponce@pga.com">jeffrey.ponce@pga.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member-container">
+          <div class="team-member-image">
+            <img src="imgs/NatalieCoach.png" alt="" />
+          </div>
+          <div class="team-member-bio">
+            <h3>Natalie Park – Coach</h3>
+            <p class="cs-text">
+              Natalie is a member of the LPGA, a dedicated golf instructor, and
+              a former NCAA award-winning athlete with over 13 years of
+              experience teaching students of all ages and skill levels.
+              <br /><br />
+
+              Her comprehensive, solution-based lessons include full swing,
+              short game, and putting; video analysis, equipment assessment, and
+              a TPI golf fitness assessment as needed.<br /><br />
+
+              At the core of her approach is the belief that no single swing
+              method works for everyone. Whether you are a first time student,
+              aspiring golf athlete, or an experienced player looking to improve
+              your next game, Natalie focuses on helping you achieve your goals
+              through personalized lessons that highlight your unique strengths.
+              She tailors each lesson to your physical structure while training
+              and coaching the mental, physical, and technical aspects of the
+              game. With practical and informative guidance, Natalie empowers
+              you to excel on the course and enables you to unlock your
+              potential. <br /><br />
+
+              Lessons in Korean are also available. 한국말 레슨 가능합니다.<br /><br />
+
+              Book your lesson at
+              <a href="https://natalieparkgolf.com">natalieparkgolf.com</a>
+              <br /><br />
+              For questions, email
+              <a href="mailto:natalieparkgolf@gmail.com"
+                >natalieparkgolf@gmail.com</a
+              >
+              <br /><br />
+              Follow on Instagram:
+              <a href="https://www.instagram.com/natalieparkgolf"
+                >@natalieparkgolf</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member-container">
+          <div class="team-member-image">
+            <img src="imgs/ThomasHutchinsonCoach.jpg" alt="" />
+          </div>
+          <div class="team-member-bio">
+            <h3>Thomas Hutchison – Coach</h3>
+            <p class="cs-text">
+              Thomas Hutchison, a graduate from UC Davis, is a current Tour Pro
+              and Coach. He has 20 years of golf experience from competing at
+              the highest collegiate level and receiving All American Honors to
+              earning his card on PGA Tour Americas. Dedicated to the game, Tom
+              spent his occasional bye weeks instructing collegiate players on
+              their game as he stepped in as UC Davis’ Assistant Men’s Golf
+              coach and Recruitment Coordinator. <br /><br />
+
+              Tom combines his thorough understanding of swing mechanics,
+              strategy, and advanced technology to level up your game. Whether
+              your goal is to show off to your buddies or prepare for
+              competition golf, Tom has experience with it all. <br /><br />
+
+              Contact info:<br /><br />
+              +1 (408) 693-6119<br /><br />
+
+              <a href="mailto:thomashutchison99@gmail.com"
+                >thomashutchison99@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member-container">
+          <div class="team-member-image">
+            <img src="imgs/Keigo'25.profile.pic.jpg" alt="Golf Coach Keigo" />
+          </div>
+          <div class="team-member-bio">
+            <h3>Keigo Painter – Coach</h3>
+            <p class="cs-text">
+              Keigo is a Coach with over 10 years of experience, including
+              training and competing at an elite level. He graduated from the
+              prestigious Hills Educational Foundation in Australia alongside
+              <span style="font-weight: bold">former World No. 1 Jason Day</span
+              >, later training with him in Orlando and occasionally caddying
+              for him. Keigo played on the Asian circuit, has multiple mini tour
+              wins around the world, and was the Northern California Junior
+              College Champion. He also competed in an event on what is now
+              known as the Korn Ferry Tour. <br /><br />
+              He worked closely with
+              <span style="font-weight: bold">legendary coach Phil Ritson</span>
+              during the later part of his career—<span
+                style="font-weight: bold"
+                >one of the key figures in shaping modern-day golf
+                instruction</span
+              >. Keigo’s teaching style is
+              <span style="font-weight: bold">calm, focused, and fun</span>,
+              with a strong emphasis on communication and building trust. He
+              helps students develop their swing naturally without
+              overcomplicating the game. Instruction is offered in both English
+              and Japanese.<br /><br />
+
+              Contact Info:<br /><br />
+
+              415-802-4043<br /><br />
+
+              <a href="mailto:kpainter2412@yahoo.com">kpainter2412@yahoo.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member-container">
+          <div class="team-member-image">
+            <img src="imgs/CalvinGongMeettheTeam.jpg" alt="" />
+          </div>
+          <div class="team-member-bio">
+            <h3>Calvin Gong – Professional Chiropractor | TPI Professional</h3>
+            <p class="cs-text">
+              Calvin Gong is a TPI-certified chiropractor who has been in
+              practice since 1992. In addition to his chiropractic practice, he
+              is a TPI professional for Green Hills GC Academy, the
+              medical/wellness director for The First Tee of San Francisco at
+              Harding Park, and has previously worked as the chiropractor for
+              the sports medicine department at Saint Ignatius College
+              Preparatory in San Francisco. He remains a source for the Saint
+              Ignatius College Preparatory varsity girls' and boys' golf teams.
+              He works with many junior players in the JTNC, JGANC, HJGT, and
+              AGJA circuits, local D1 collegiate players, as well as members
+              from several Bay Area courses - Presidio, Lake Merced, Olympic,
+              San Francisco, Cal, Peninsula, and Green Hills golf clubs, to name
+              a few. He has experience working with Symmetra tour and LPGA
+              Q-school qualifying players. As a TPI-certified chiropractor,
+              Calvin has first-hand knowledge of spinal and extremities
+              biomechanics and how they relate to the Big 12 Swing
+              Characteristics. His main goal for each golfer is to help golfers
+              avoid injury while improving their swing. Prior to each session,
+              he will request a few swing videos, consult with the golfer about
+              their health and injury history, and what their overall goal is
+              from this screening. Each individual golfer is then given a
+              customized screen and prescribed a TPI-specific medical/fitness
+              protocol. <br /><br />
+
+              Contact Info:<br /><br />
+
+              +1 (650) 384-3474<br /><br />
+
+              <!-- <a href="mailto:dr.calvin@atlashealthcenter.net">dr.calvin@atlashealthcenter.net</a></p> -->
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member-container">
+          <div class="team-member-image bottom-focus">
+            <img
+              src="imgs/GrantParr.png"
+              alt="Grant Parr Performance Coach San Francisco Bay Area"
+            />
+          </div>
+          <div class="team-member-bio">
+            <h3>Grant Parr – Performance Coach</h3>
+            <p class="cs-text">
+              Grant Parr, M.A. is a Mental Performance Coach who transforms
+              golfers' games from the inside out.<br /><br />
+
+              His specialized approach combines cutting-edge mental performance
+              techniques with deep golf expertise to help players of all levels
+              break through their mental barriers and achieve lower scores.<br /><br />
+
+              With extensive experience in sport psychology, Grant has worked
+              with golfers ranging from promising juniors to collegiate athletes
+              and tour professionals. His proven methodology helps players
+              master the most challenging aspects of golf: managing tournament
+              pressure, recovering from setbacks, and performing consistently
+              under stress.<br /><br />
+
+              Grant's journey in sports and mental performance began early,
+              competing at high levels across multiple sports before focusing on
+              the mental game that makes champions. After earning his Master's
+              degree in Sport Psychology, he discovered his true calling:
+              helping athletes master the mental side of golf - where a single
+              shot can change everything, and mental fortitude means the
+              difference between breaking par and breaking down.<br /><br />
+
+              What sets Grant apart is his ability to translate complex mental
+              performance concepts into practical, on-course strategies that
+              work. His approach helps golfers build lasting confidence and
+              emotional control that serves them both on and off the course,
+              turning mental challenges into opportunities for growth.<br /><br />
+
+              Grant Parr M.A.<br /><br />
+
+              Mental Performance Coach<br /><br />
+
+              Contact Info:<br /><br />
+
+              +1 (650) 384-3474<br /><br />
+
+              <!-- <a href="mailto:grant@gamefaceperformance.com">grant@gamefaceperformance.com</a></p><br><br> -->
+              <!-- <a href="https://www.gamefaceperformance.com">www.gamefaceperformance.com</a></p> -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side  Services Reverse               -->
+    <!-- ============================================ -->
+
+    <section id="sbs-2333">
+      <div class="cs-container">
+        <div class="cs-content">
+          <!-- <span class="cs-topper">About Us</span> -->
+          <h2 class="cs-title">Instruction</h2>
+          <p class="cs-text">
+            We provide personalized golf instruction utilizing video analysis
+            and ball and club head data to track your performance. This provides
+            an optimal learning environment where you can see your improvements
+            in real time and better understand what's going on in the golf
+            swing. Resulting in a more enjoyable time on the course.<br /><br />
+            Our first step in building an instruction plan is with an Intro
+            Session – where we evaluate your swing, assess your game, and set a
+            custom program together to reach your goals. In order to book an
+            Intro Session, please contact us.
+          </p>
+          <!-- <a href="https://app.squareup.com/appointments/book/smjs06lkx8e3md/LAJXXKF6J8R0B/start" class="cs-button-solid">Reserve a Bay</a> -->
         </div>
         <picture class="cs-picture">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" src="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/39ee96de-5540-469d-872c-e982f7534800/public">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" src="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/39ee96de-5540-469d-872c-e982f7534800/public">
-            <img loading="lazy" decoding="async" src="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/39ee96de-5540-469d-872c-e982f7534800/public" alt="building" width="1280" height="568">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            src="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/39ee96de-5540-469d-872c-e982f7534800/public"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            src="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/39ee96de-5540-469d-872c-e982f7534800/public"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/39ee96de-5540-469d-872c-e982f7534800/public"
+            alt="building"
+            width="1280"
+            height="568"
+          />
         </picture>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- ============================================ -->
-<!--     OLD         Side By Side Reverse            -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                 Side By Side  Services               -->
+    <!-- ============================================ -->
 
-<!-- <section id="sbsr-1462">
-    <div class="cs-container"> -->
-        <!-- Left Image Section -->
-        <!-- <div class="cs-image-group">
-            <picture class="cs-picture cs-picture1">
-                <source media="(max-width: 600px)" src="imgs/DSC09064.jpg">
-                <source media="(min-width: 601px)" src="imgs/DSC09064.jpg">
-                <img loading="lazy" decoding="async" src="imgs/DSC09064.jpg" alt="turbine" width="500" height="729" aria-hidden="true">
-            </picture> -->
-            <!-- <picture class="cs-picture cs-picture2">
-                <source media="(max-width: 600px)" src="imgs/DSC09064.jpg">
-                <source media="(min-width: 601px)" src="imgs/DSC09064.jpg">
-                <img loading="lazy" decoding="async" src="imgs/DSC09064.jpg" alt="windmill" width="378" height="460" aria-hidden="true">
-            </picture> -->
-        </div>
-        <!-- Right Content Section-->
-        <!-- <div class="cs-content"> -->
-            <!-- <span class="cs-topper">Welcome to EcoStitch</span> -->
-            <!-- <h2 class="cs-title">Practice</h2>
-            <p class="cs-text">
-                Our practice bay is outfitted with the Foresight GCQuad launch monitor and premium golf balls. After each Practice Session, we reserve 5 minutes to sanitize the hitting bays.
-            </p>
-            <ul class="cs-ul">
-                <li class="cs-li">30 Minutes</li>
-                <li class="cs-li">1 Hour</li>
-                <li class="cs-li">2 Hours</li>
-            </ul> -->
-            <!-- <a href="" class="cs-button-solid">Discover More</a> -->
-        </div>
-    </div>
-    <!-- <picture class="cs-background"> -->
-        <!--Mobile Image-->
-        <!-- <source media="(max-width: 600px)" src="imgs/DSC09580-HDR.jpg"> -->
-        <!--Tablet and above Image-->
-        <!-- <source media="(min-width: 601px)" src="imgs/DSC09580-HDR.jpg">
-        <img loading="lazy" decoding="async" src="imgs/DSC09580-HDR.jpg" alt="turbine" width="1280" height="568">
-    </picture> -->
-</section>
-
-<!-- ============================================ -->
-<!--                 Side By Side  Services               -->
-<!-- ============================================ -->
-
-<section id="sbs-2348">
-    <div class="cs-container">
+    <section id="sbs-2348">
+      <div class="cs-container">
         <div class="cs-content">
-            <!-- <span class="cs-topper">About Us</span> -->
-            <h2 class="cs-title">Fitness and Training</h2>
-            <p class="cs-text">
-                Fitness training can significantly enhance your golf game by improving strength, flexibility, balance, and endurance. Targeted exercises for the core, hips, and shoulders help generate more power and stability in your swing, leading to greater distance and control. Additionally, better overall fitness reduces the risk of injury and keeps you focused and energized throughout a full round. Incorporating a regular fitness routine tailored to golf can give you a competitive edge and make the game more enjoyable.
-            </p>
-            <!-- <a href="" class="cs-button-solid">Reserve a Bay</a> -->
+          <!-- <span class="cs-topper">About Us</span> -->
+          <h2 class="cs-title">Fitness and Training</h2>
+          <p class="cs-text">
+            Fitness training can significantly enhance your golf game by
+            improving strength, flexibility, balance, and endurance. Targeted
+            exercises for the core, hips, and shoulders help generate more power
+            and stability in your swing, leading to greater distance and
+            control. Additionally, better overall fitness reduces the risk of
+            injury and keeps you focused and energized throughout a full round.
+            Incorporating a regular fitness routine tailored to golf can give
+            you a competitive edge and make the game more enjoyable.
+          </p>
+          <!-- <a href="" class="cs-button-solid">Reserve a Bay</a> -->
         </div>
         <picture class="cs-picture">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b3153176-072a-4895-403e-66a681fce800/public">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b3153176-072a-4895-403e-66a681fce800/public">
-            <img loading="lazy" decoding="async" srcset="https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b3153176-072a-4895-403e-66a681fce800/public" alt="building" width="1280" height="568">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b3153176-072a-4895-403e-66a681fce800/public
+            "
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b3153176-072a-4895-403e-66a681fce800/public
+            "
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            srcset="
+              https://imagedelivery.net/F3zW_wJVwGCdi4CWJus9VQ/b3153176-072a-4895-403e-66a681fce800/public
+            "
+            alt="building"
+            width="1280"
+            height="568"
+          />
         </picture>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- ============================================ -->
-<!--                  Old Pricing                     -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                  Old Pricing                     -->
+    <!-- ============================================ -->
 
-<!-- <section id="pricing-976">
+    <!-- <section id="pricing-976">
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Pricing</span>
             <h2 class="cs-title">All Services</h2>
             Menu-->
-            <!-- <ul class="cs-menu-group">
+    <!-- <ul class="cs-menu-group">
                 <li class="cs-menu-item">
                     <h3 class="cs-h3">
                         <span class="cs-header">Ala Carte</span>
@@ -573,187 +777,311 @@ Our philosophy is that playing better golf makes the game more enjoyable. Not al
         </div>
         <picture class="cs-picture">
             <!--Mobile Image-->
-            <!-- <source media="(max-width: 600px)" src="imgs/DSC09038.jpg"> -->
-            <!--Tablet and above Image-->
-            <!-- <source media="(min-width: 601px)" src="imgs/DSC09038.jpg">
+    <!-- <source media="(max-width: 600px)" src="imgs/DSC09038.jpg"> -->
+    <!--Tablet and above Image-->
+    <!-- <source media="(min-width: 601px)" src="imgs/DSC09038.jpg">
             <img loading="lazy" decoding="async" src="imgs/DSC09038.jpg" alt="hair salon" width="521" height="640">
         </picture>
     </div>
 </section>                     -->
 
-<!-- ============================================ -->
-<!--                  Pricing                     -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                  Pricing                     -->
+    <!-- ============================================ -->
 
-<!-- CARD PRICING -->
-<section id="card-pricing-1234">
-    <h2 class="cs-title">Pricing</h2>
-    <div class="cs-container-pricing">
+    <!-- CARD PRICING -->
+    <section id="card-pricing-1234">
+      <h2 class="cs-title">Pricing</h2>
+      <div class="cs-container-pricing">
         <div class="cs-card">
-            <h3>A LA CARTE</h3>
-            <h1 class="num-session">1</h1>
-            <h4>Session</h4>
-            <h3>-</h3>
-            <p>One 1 hour practice session</p>
-            <h3>-</h3>
-            <span>$50</span>
-            <a target="_blank" href="https://square.link/u/IaFqf17D" class="cs-button-solid">Buy Now</a>
+          <h3>A LA CARTE</h3>
+          <h1 class="num-session">1</h1>
+          <h4>Session</h4>
+          <h3>-</h3>
+          <p>One 1 hour practice session</p>
+          <h3>-</h3>
+          <span>$50</span>
+          <a
+            target="_blank"
+            href="https://square.link/u/IaFqf17D"
+            class="cs-button-solid"
+            >Buy Now</a
+          >
         </div>
 
         <div class="cs-card">
-            <h3>Range Card</h3>
-            <h1 class="num-session">5</h1>
-            <h3>Sessions</h3>
-            <h3>-</h3>
-            <p>Five 1 hour practice sessions</p>
-            <p>Expires in 90 days.</p>
-            <h3>-</h3>
-            <span>$225</span>
-            <a target="_blank" href="https://square.link/u/m8IlV5ey?src=embed" class="cs-button-solid">Buy Now</a>
+          <h3>Range Card</h3>
+          <h1 class="num-session">5</h1>
+          <h3>Sessions</h3>
+          <h3>-</h3>
+          <p>Five 1 hour practice sessions</p>
+          <p>Expires in 90 days.</p>
+          <h3>-</h3>
+          <span>$225</span>
+          <a
+            target="_blank"
+            href="https://square.link/u/m8IlV5ey?src=embed"
+            class="cs-button-solid"
+            >Buy Now</a
+          >
         </div>
 
         <div class="cs-card">
-            <h3>Range Card</h3>
-            <h1 class="num-session">10</h1>
-            <h3>Sessions</h3>
-            <h3>-</h3>
-            <p>Ten 1 hour practice sessions</p>
-            <p>Expires in 90 days.</p>
-            <h3>-</h3>
-            <span>$400</span>
-            <a target="_blank" href="https://square.link/u/ake1YLgj" class="cs-button-solid">Buy Now</a>
+          <h3>Range Card</h3>
+          <h1 class="num-session">10</h1>
+          <h3>Sessions</h3>
+          <h3>-</h3>
+          <p>Ten 1 hour practice sessions</p>
+          <p>Expires in 90 days.</p>
+          <h3>-</h3>
+          <span>$400</span>
+          <a
+            target="_blank"
+            href="https://square.link/u/ake1YLgj"
+            class="cs-button-solid"
+            >Buy Now</a
+          >
         </div>
 
         <div class="cs-card">
-            <h3>Range Card</h3>
-            <h1 class="num-session">15</h1>
-            <h3>Sessions</h3>
-            <h3>-</h3>
-            <p>15 1 hour practice sessions</p>
-            <p>Expires in 150 days.</p>
-            <h3>-</h3>
-            <span>$525</span>
-            <a target="_blank" href="https://square.link/u/2HWSbsdp" class="cs-button-solid">Buy Now</a>
+          <h3>Range Card</h3>
+          <h1 class="num-session">15</h1>
+          <h3>Sessions</h3>
+          <h3>-</h3>
+          <p>15 1 hour practice sessions</p>
+          <p>Expires in 150 days.</p>
+          <h3>-</h3>
+          <span>$525</span>
+          <a
+            target="_blank"
+            href="https://square.link/u/2HWSbsdp"
+            class="cs-button-solid"
+            >Buy Now</a
+          >
         </div>
-    </div>
-    <h1 id="instruction-training-header-pricing">Instruction & Training</h1> 
-    <p>Please contact us for more information on pricing for private lessons and fitness training</p>
-</section>
+      </div>
+      <h1 id="instruction-training-header-pricing">Instruction & Training</h1>
+      <p>
+        Please contact us for more information on pricing for private lessons
+        and fitness training
+      </p>
+    </section>
 
-<!-- ============================================ -->
-<!--                Call To Action                -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                Call To Action                -->
+    <!-- ============================================ -->
 
-<section id="cta-2400">
-    <div class="cs-container">
+    <section id="cta-2400">
+      <div class="cs-container">
         <div class="cs-content">
-            <h2 class="cs-title">The Perfect Gift for Every Golfer</h2>
-            <p class="cs-text">
-                Give the joy of golf year-round with a gift card for play, lessons, and more.
-            </p>
-            <a href="https://app.squareup.com/gift/MLNGHXJ54V5FW/order" target="_blank" class="cs-button-solid">Buy Gift Card</a>
+          <h2 class="cs-title">The Perfect Gift for Every Golfer</h2>
+          <p class="cs-text">
+            Give the joy of golf year-round with a gift card for play, lessons,
+            and more.
+          </p>
+          <a
+            href="https://app.squareup.com/gift/MLNGHXJ54V5FW/order"
+            target="_blank"
+            class="cs-button-solid"
+            >Buy Gift Card</a
+          >
         </div>
         <!--Adjust the max width of the image on tablet to change its height if you need it to be shorter-->
-        <img class="cs-graphic" src="https://res.cloudinary.com/golfpost/image/upload/v1647874462/pages/coverphotos/eoqsqq81iruysiyokaij.jpg" alt="Golf Gift Card" loading="lazy" decoding="async" width="681" height="534">
-    </div>
-</section>
-                                
-                                
+        <img
+          class="cs-graphic"
+          src="https://res.cloudinary.com/golfpost/image/upload/v1647874462/pages/coverphotos/eoqsqq81iruysiyokaij.jpg"
+          alt="Golf Gift Card"
+          loading="lazy"
+          decoding="async"
+          width="681"
+          height="534"
+        />
+      </div>
+    </section>
 
-<!-- ============================================ -->
-<!--                  Footer                      -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                  Footer                      -->
+    <!-- ============================================ -->
 
-<footer id="footer-2395">
-    <div class="cs-container">
+    <footer id="footer-2395">
+      <div class="cs-container">
         <div class="cs-logo-group">
-            <a href="index.html" class="cs-logo" aria-label="back to home">
-                <img src="imgs/MySwingStudio+Logo+White.png" alt="logo" loading="lazy" decoding="async" width="321" height="56" aria-hidden="true">
+          <a href="index.html" class="cs-logo" aria-label="back to home">
+            <img
+              src="imgs/MySwingStudio+Logo+White.png"
+              alt="logo"
+              loading="lazy"
+              decoding="async"
+              width="321"
+              height="56"
+              aria-hidden="true"
+            />
+          </a>
+          <p class="cs-text">
+            MySwingStudio is dedicated to providing a personalized golf
+            experience for all skill levels. Our state-of-the-art facility and
+            expert instructors are here to help you improve your game and enjoy
+            the sport you love.
+          </p>
+          <div class="cs-contact-info">
+            <span class="cs-header">Contact</span>
+            <a href="tel:555-555-5555" class="cs-contact-link">
+              <img
+                class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/phone-w.svg"
+                alt="icon"
+                width="24"
+                height="24"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+              +1 (650) 384-3474
             </a>
-            <p class="cs-text">
-                MySwingStudio is dedicated to providing a personalized golf experience for all skill levels. Our state-of-the-art facility and expert instructors are here to help you improve your game and enjoy the sport you love.
-            </p>
-            <div class="cs-contact-info">
-                <span class="cs-header">Contact</span>
-                <a href="tel:555-555-5555" class="cs-contact-link">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/phone-w.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async" aria-hidden="true">
-                    +1 (650) 384-3474
-                </a>
-                <a href="mailto:myswingstudio@gmail.com" class="cs-contact-link">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/mail-w.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async" aria-hidden="true">
-                    myswingstudio@gmail.com
-                </a>
-                <a href="" class="cs-contact-link">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/pin-w.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async" aria-hidden="true">
-                    1021 Howard Ave Ste A, San Carlos, CA 94070
-                </a>
-                <a href="" class="cs-contact-link">
-                    <img class="cs-icon" src="imgs/clockIcon.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async" aria-hidden="true">
-                    <div class="hours">
-                       <div class="day-hours">
-                          <div class="day">Monday:</div>    <div class="right-align">09:00 AM - 10:00 PM</div>
-                       </div> 
+            <a href="mailto:myswingstudio@gmail.com" class="cs-contact-link">
+              <img
+                class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/mail-w.svg"
+                alt="icon"
+                width="24"
+                height="24"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+              myswingstudio@gmail.com
+            </a>
+            <a href="" class="cs-contact-link">
+              <img
+                class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/pin-w.svg"
+                alt="icon"
+                width="24"
+                height="24"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+              1021 Howard Ave Ste A, San Carlos, CA 94070
+            </a>
+            <a href="" class="cs-contact-link">
+              <img
+                class="cs-icon"
+                src="imgs/clockIcon.svg"
+                alt="icon"
+                width="24"
+                height="24"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+              <div class="hours">
+                <div class="day-hours">
+                  <div class="day">Monday:</div>
+                  <div class="right-align">09:00 AM - 10:00 PM</div>
+                </div>
 
-                       <div class="day-hours">
-                           <div class="day">Tuesday:</div>   <div class="right-align">09:00 AM - 10:00 PM</div>
-                       </div>
-                       <div class="day-hours">
-                           <div class="day">Wednesday:</div> <div class="right-align">09:00 AM - 10:00 PM</div>
-                       </div>
-                       <div class="day-hours">
-                           <div class="day">Thursday:</div>  <div class="right-align">09:00 AM - 10:00 PM</div>
-                       </div>
-                       <div class="day-hours">
-                           <div class="day">Friday:</div>    <div class="right-align">09:00 AM - 10:00 PM</div>
-                       </div>
-                       <div class="day-hours">
-                           <div class="day">Saturday:</div>  <div class="right-align">09:00 AM - 10:00 PM</div>
-                       </div>
-                       <div class="day-hours">
-                           <div class="day">Sunday:</div>    <div class="right-align">10:00 AM - 05:00 PM</div>
-                       </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cs-social">
-                <!--Get more icons at flaticon.com and download the svg-->
-                <!-- <a href="" class="cs-social-link" aria-label="visit facebook">
+                <div class="day-hours">
+                  <div class="day">Tuesday:</div>
+                  <div class="right-align">09:00 AM - 10:00 PM</div>
+                </div>
+                <div class="day-hours">
+                  <div class="day">Wednesday:</div>
+                  <div class="right-align">09:00 AM - 10:00 PM</div>
+                </div>
+                <div class="day-hours">
+                  <div class="day">Thursday:</div>
+                  <div class="right-align">09:00 AM - 10:00 PM</div>
+                </div>
+                <div class="day-hours">
+                  <div class="day">Friday:</div>
+                  <div class="right-align">09:00 AM - 10:00 PM</div>
+                </div>
+                <div class="day-hours">
+                  <div class="day">Saturday:</div>
+                  <div class="right-align">09:00 AM - 10:00 PM</div>
+                </div>
+                <div class="day-hours">
+                  <div class="day">Sunday:</div>
+                  <div class="right-align">10:00 AM - 05:00 PM</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="cs-social">
+            <!--Get more icons at flaticon.com and download the svg-->
+            <!-- <a href="" class="cs-social-link" aria-label="visit facebook">
                     <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/face-w.svg" alt="icon" width="12" height="12" loading="lazy" decoding="async" aria-hidden="true">
                 </a>
                 <a href="" class="cs-social-link" aria-label="visit twitter">
                     <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-w.svg" alt="icon" width="12" height="12" loading="lazy" decoding="async" aria-hidden="true">
                 </a> -->
-                <a href="" class="cs-social-link" aria-label="visit instagram">
-                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-w.svg" alt="icon" width="12" height="12" loading="lazy" decoding="async" aria-hidden="true">
-                </a>
-                <!-- <a href="" class="cs-social-link" aria-label="visit youtube">
+            <a href="" class="cs-social-link" aria-label="visit instagram">
+              <img
+                class="cs-social-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-w.svg"
+                alt="icon"
+                width="12"
+                height="12"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </a>
+            <!-- <a href="" class="cs-social-link" aria-label="visit youtube">
                     <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/you-w.svg" alt="icon" width="12" height="12" loading="lazy" decoding="async" aria-hidden="true">
                 </a> -->
-            </div>
+          </div>
         </div>
         <div class="cs-service-group">
-            <!-- <span class="cs-header">Services</span> -->
-            <ul class="cs-ul">
-                <li class="cs-li"><a href="about.html" class="cs-link">About Us</a></li>
-                <li class="cs-li"><a href="index.html#sbs-2348" class="cs-link">Services</a></li>
-                <li class="cs-li"><a href="index.html#pricing-975" class="cs-link">Pricing</a></li>
-                <!-- <li class="cs-li"><a href="index.html#gallery-1182" class="cs-link">Technology</a></li> -->
-                <li class="cs-li"><a href="index.html#meet-team-1141" class="cs-link">Meet the Team</a></li>
-                <li class="cs-li"><a href="contact.html" class="cs-link">Contact</a></li>
-                <li class="cs-li"><a href="https://app.squareup.com/appointments/book/smjs06lkx8e3md/LAJXXKF6J8R0B/start" class="cs-link">Reserve a Bay</a></li>
-
-            </ul>
-            <div class="cs-terms">
-                <a href="" class="cs-link">Terms & Condition</a>
-                <a href="" class="cs-link">Privacy Policy</a>
-                <a href="" class="cs-link">Cancellation</a>
-            </div>
-            <span class="cs-copyright">
-                © Copyright 2025 - <a href="" class="cs-link">MySwingStudio</a>
-            </span>
+          <!-- <span class="cs-header">Services</span> -->
+          <ul class="cs-ul">
+            <li class="cs-li">
+              <a href="about.html" class="cs-link">About Us</a>
+            </li>
+            <li class="cs-li">
+              <a href="index.html#sbs-2348" class="cs-link">Services</a>
+            </li>
+            <li class="cs-li">
+              <a href="index.html#pricing-975" class="cs-link">Pricing</a>
+            </li>
+            <!-- <li class="cs-li"><a href="index.html#gallery-1182" class="cs-link">Technology</a></li> -->
+            <li class="cs-li">
+              <a href="index.html#meet-team-1141" class="cs-link"
+                >Meet the Team</a
+              >
+            </li>
+            <li class="cs-li">
+              <a href="contact.html" class="cs-link">Contact</a>
+            </li>
+            <li class="cs-li">
+              <a
+                href="https://app.squareup.com/appointments/book/smjs06lkx8e3md/LAJXXKF6J8R0B/start"
+                class="cs-link"
+                >Reserve a Bay</a
+              >
+            </li>
+          </ul>
+          <div class="cs-terms">
+            <a href="" class="cs-link">Terms & Condition</a>
+            <a href="" class="cs-link">Privacy Policy</a>
+            <a href="" class="cs-link">Cancellation</a>
+          </div>
+          <span class="cs-copyright">
+            © Copyright 2025 - <a href="" class="cs-link">MySwingStudio</a>
+          </span>
         </div>
-    </div>
-    <img class="cs-floater" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/flower-svg.svg" alt="flower graphic" loading="lazy" decoding="async" width="635" height="728" aria-hidden="true">
-</footer>                        
-</body>
+      </div>
+      <img
+        class="cs-floater"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/flower-svg.svg"
+        alt="flower graphic"
+        loading="lazy"
+        decoding="async"
+        width="635"
+        height="728"
+        aria-hidden="true"
+      />
+    </footer>
+  </body>
 </html>
