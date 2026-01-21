@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -97,7 +97,7 @@
       var CSbody = document.querySelector("body");
       const CSnavbarMenu = document.querySelector("#cs-navigation");
       const CShamburgerMenu = document.querySelector(
-        "#cs-navigation .cs-toggle"
+        "#cs-navigation .cs-toggle",
       );
 
       CShamburgerMenu.addEventListener("click", function () {
@@ -122,7 +122,7 @@
 
       // mobile nav toggle code
       const dropDowns = Array.from(
-        document.querySelectorAll("#cs-navigation .cs-dropdown")
+        document.querySelectorAll("#cs-navigation .cs-dropdown"),
       );
       for (const item of dropDowns) {
         const onClick = () => {
@@ -619,6 +619,50 @@
             </p>
           </div>
         </div>
+
+        <div class="team-member-container">
+          <div class="team-member-image bottom-focus">
+            <img
+              src="imgs/Finigan.jpg"
+              alt="Grant Parr Performance Coach San Francisco Bay Area"
+            />
+          </div>
+          <div class="team-member-bio">
+            <h3>Finigan Tilly – Coach</h3>
+            <p class="cs-text">
+              Finigan Tilly is a professional golfer and instructor with nearly
+              20 years of experience in the game. A former standout player for
+              UC Berkeley, Finigan has competed at a high level across the
+              country, winning multiple amateur events and earning his PGA Tour
+              Americas playing card.<br /><br />
+
+              Drawing from his years on the course and deep understanding of the
+              game, Finigan brings a thoughtful, down-to-earth approach to golf
+              instruction. He focuses on helping players of all skill levels
+              build strong fundamentals, develop consistency, and enjoy every
+              round a little more. Whether it’s refining your swing, improving
+              course strategy, or learning to think like a pro, Finigan’s goal
+              is to make improvement both achievable and fun.<br /><br />
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member-container">
+          <div class="team-member-image bottom-focus">
+            <img
+              src="imgs/Hari_Kurup.jpg"
+              alt="Grant Parr Performance Coach San Francisco Bay Area"
+            />
+          </div>
+          <div class="team-member-bio">
+            <h3>Hari Kurup – Coach</h3>
+            <p class="cs-text">
+              With over 36 years of personal playing experience, I bring a deep understanding of the game to every lesson. Lessons are conducted at My Swing Studio, a dedicated studio equipped powered by RangeX, offering precise analysis and feedback for faster improvement. In addition to studio sessions, I also provide on-course playing lessons to help students apply their skills in real-world scenarios and improve their course management. I am passionate about helping students of all ages and abilities improve all aspects of their game and, most importantly, lower their golf scores. Areas I focus on include: Short Game Mastery (putting, chipping, pitching); Long Game Skills (ball striking, driving distance, and accuracy); Mental Performance (staying focused and confident); Course Management (strategy and decision-making); Green Reading (improving putt success); Most importantly, I strive to make golf fun and rewarding.<br /><br />
+
+              Whether your goal is to shoot lower scores, gain more confidence on the course, or simply enjoy this wonderful game of a lifetime, I’m here to help you every step of the way.<br /><br />
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -718,52 +762,91 @@
     </section>
 
     <!-- ============================================ -->
-<!--                  Services                    -->
-<!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
 
-<section id="services-562">
-    <div class="cs-container">
+    <section id="services-562">
+      <div class="cs-container">
         <picture class="cs-picture">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1627307886605-309bba4cb9a5?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1627307886605-309bba4cb9a5?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1627307886605-309bba4cb9a5?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="computer" width="630" height="528" aria-hidden="true">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://images.unsplash.com/photo-1627307886605-309bba4cb9a5?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+            "
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://images.unsplash.com/photo-1627307886605-309bba4cb9a5?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+            "
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://images.unsplash.com/photo-1627307886605-309bba4cb9a5?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="computer"
+            width="630"
+            height="528"
+            aria-hidden="true"
+          />
         </picture>
         <div class="cs-content">
-            <h3 class="cs-h3">Fitting</h3>
-            <p class="cs-text">
-                Unlock your best game with our professional golf club fitting service. Whether you're a beginner or seasoned player, we tailor every club in your bag—from driver to putter—to match your unique swing mechanics, body measurements, and playing style.<br><br>
-                Call to schedule your fitting
-            </p>
-            <ul class="cs-ul">
-                <li class="cs-li">
-                    45 min fitting $75
-                </li>
-                <li class="cs-li">
-                    90 min fitting $150
-                </li>
-            </ul>
-            <a href="contact.html" class="cs-button-solid">Contact Us</a>
+          <h3 class="cs-h3">Fitting</h3>
+          <p class="cs-text">
+            Unlock your best game with our professional golf club fitting
+            service. Whether you're a beginner or seasoned player, we tailor
+            every club in your bag—from driver to putter—to match your unique
+            swing mechanics, body measurements, and playing style.<br /><br />
+            Call to schedule your fitting
+          </p>
+          <ul class="cs-ul">
+            <li class="cs-li">45 min fitting $75</li>
+            <li class="cs-li">90 min fitting $150</li>
+          </ul>
+          <a href="contact.html" class="cs-button-solid">Contact Us</a>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- ============================================ -->
-<!--                   Logos                      -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                   Logos                      -->
+    <!-- ============================================ -->
 
-<section id="logos-572">
-    <div class="cs-container">
+    <section id="logos-572">
+      <div class="cs-container">
         <!--Ideally you want to use svg's for the file path image, which is why these aren't wrapped in picture elements for different screen sizes-->
-        <img id="mizuno-logo" class="cs-logo" src="imgs/mizuno logo.png" alt="Mizuno logo" width="287" height="65" loading="lazy" decoding="async">
-        <img class="cs-logo" src="imgs/srixon-logo_brandlogos.net_kxqwp.png" alt="Srixon logo" width="229" height="55" loading="lazy" decoding="async">
-        <img class="cs-logo" src="imgs/XXIO Logo Vector.svg .png" alt="XXIO logo" width="235" height="53" loading="lazy" decoding="async">
-    </div>
-</section>
-
-
-                                
+        <img
+          id="mizuno-logo"
+          class="cs-logo"
+          src="imgs/mizuno logo.png"
+          alt="Mizuno logo"
+          width="287"
+          height="65"
+          loading="lazy"
+          decoding="async"
+        />
+        <img
+          class="cs-logo"
+          src="imgs/srixon-logo_brandlogos.net_kxqwp.png"
+          alt="Srixon logo"
+          width="229"
+          height="55"
+          loading="lazy"
+          decoding="async"
+        />
+        <img
+          class="cs-logo"
+          src="imgs/XXIO Logo Vector.svg .png"
+          alt="XXIO logo"
+          width="235"
+          height="53"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    </section>
 
     <!-- ============================================ -->
     <!--                  Pricing                     -->
@@ -773,96 +856,87 @@
     <section id="card-pricing-1234">
       <h2 class="cs-title">Pricing</h2>
 
-       <!-- ============================================ -->
-    <!--                  MEMBERSHIP Pricing                     -->
-    <!-- ============================================ -->
+      <!-- ============================================ -->
+      <!--                  MEMBERSHIP Pricing                     -->
+      <!-- ============================================ -->
 
-    <section id="membership-pricing">
-      <h2 class="cs-title">Membership Pricing</h2>
-      <div class="membership-pricing-container">
-        <div class="membership-card">
-          <div class="plan-name">
-            <span>BASIC</span>
-            <span>PLAN</span>
-          </div>
-          <div class="plan-price">
-            <span>$179 / MONTH</span>
-          </div>
-          <div class="plan-includes">
-            <ul>
-              <li>4 hours of simulator time per month.</li>
-              <li>15% discount on extra hours.</li>
-              <li>3-day advance booking.</li>
-              <li>1 guest pass per month.</li>
-              <li>saving of $21</li>
-            </ul>
+      <section id="membership-pricing">
+        <h2 class="cs-title">Membership Pricing</h2>
+        <div class="membership-pricing-container">
+          <div class="membership-card">
+            <div class="plan-name">
+              <span>BASIC</span>
+              <span>PLAN</span>
+            </div>
+            <div class="plan-price">
+              <span>$179 / MONTH</span>
+            </div>
+            <div class="plan-includes">
+              <ul>
+                <li>4 hours of simulator time per month.</li>
+                <li>15% discount on extra hours.</li>
+                <li>3-day advance booking.</li>
+                <li>1 guest pass per month.</li>
+                <li>saving of $21</li>
+              </ul>
+            </div>
+
+            <a target="_blank" href="#" class="cs-button-solid">Buy Now</a>
           </div>
 
-          <a
-            target="_blank"
-            href="#"
-            class="cs-button-solid"
-            >Buy Now</a
-          >
+          <div class="membership-card">
+            <div class="plan-name">
+              <span>PREMIUM</span>
+              <span>PLAN</span>
+            </div>
+            <div class="plan-price">
+              <span>$299 / MONTH</span>
+            </div>
+            <div class="plan-includes">
+              <ul>
+                <li>
+                  8 hours of simulator time per month.(Up to 2 hours a week)
+                </li>
+                <li>25% discount on extra hours.</li>
+                <li>7-day advance booking.</li>
+                <li>2 guest passes per month.</li>
+                <li>
+                  Two 18 hole rounds a month on FSX PLAY with up to 1 guest.
+                </li>
+                <li>saving of $101.</li>
+              </ul>
+            </div>
+            <a target="_blank" href="#" class="cs-button-solid">Buy Now</a>
+          </div>
+
+          <div class="membership-card">
+            <div class="plan-name">
+              <span>ELITE</span>
+              <span>PLAN</span>
+            </div>
+            <div class="plan-price">
+              <span>$469 / MONTH</span>
+            </div>
+            <div class="plan-includes">
+              <ul>
+                <li>Unlimited simulator time.(Up to 3 hours a day)</li>
+                <li>7-day advance booking.</li>
+                <li>15% off golf lessons.</li>
+                <li>4 guest passes per month.</li>
+                <li>
+                  Two 18 hole rounds a month on FSX PLAY with up to 2 guests.
+                </li>
+                <li>Annual club fitting or bag check</li>
+                <li>saving of $931</li>
+              </ul>
+            </div>
+            <a target="_blank" href="#" class="cs-button-solid">Buy Now</a>
+          </div>
         </div>
+      </section>
 
-        <div class="membership-card">
-          <div class="plan-name">
-            <span>PREMIUM</span>
-            <span>PLAN</span>
-          </div>
-          <div class="plan-price">
-            <span>$299 / MONTH</span>
-          </div>
-          <div class="plan-includes">
-            <ul>
-              <li>8 hours of simulator time per month.(Up to 2 hours a week)</li>
-              <li>25% discount on extra hours.</li>
-              <li>7-day advance booking.</li>
-              <li>2 guest passes per month.</li>
-              <li>Two 18 hole rounds a month on FSX PLAY with up to 1 guest.</li>
-              <li>saving of $101.</li>
-            </ul>
-          </div>
-          <a
-            target="_blank"
-            href="#"
-            class="cs-button-solid"
-            >Buy Now</a
-          >
-        </div>
-
-        <div class="membership-card">
-          <div class="plan-name">
-            <span>ELITE</span>
-            <span>PLAN</span>
-          </div>
-          <div class="plan-price">
-            <span>$469 / MONTH</span>
-          </div>
-          <div class="plan-includes">
-            <ul>
-              <li>Unlimited simulator time.(Up to 3 hours a day)</li>
-              <li>7-day advance booking.</li>
-              <li>15% off golf lessons.</li>
-              <li>4 guest passes per month.</li>
-              <li>Two 18 hole rounds a month on FSX PLAY with up to 2 guests.</li>
-              <li>Annual club fitting or bag check</li>
-              <li>saving of $931</li>
-            </ul>
-          </div>
-          <a
-            target="_blank"
-            href="#"
-            class="cs-button-solid"
-            >Buy Now</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- Range Card Pricing -->
-     <h2 class="cs-title">Range Cards</h2>
+      <!-- Range Card Pricing -->
+      <h2 class="cs-title">Range Cards</h2>
       <div class="cs-container-pricing">
         <div class="cs-card">
           <h3>A LA CARTE</h3>
