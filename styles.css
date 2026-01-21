@@ -3741,6 +3741,8 @@ body.dark-mode .cs-button-solid:before {
   max-width: 100%;
 }
 
+/* Membership Pricing */
+
 #membership-pricing .cs-title {
   font-size: 4rem;
   margin-bottom: 5rem;
@@ -3774,6 +3776,11 @@ body.dark-mode .cs-button-solid:before {
   gap: 1rem;
   flex-grow: 0;
 }
+
+.membership-card .cs-button-solid {
+  margin-top: auto; /* ensures consistent alignment */
+}
+
 
 #card-pricing-1234 .cs-container-pricing .cs-card {
   display: flex;
