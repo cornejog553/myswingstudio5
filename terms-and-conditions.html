@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Swing Studio — Membership Terms & Conditions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #ffffff;
+      --dark: #111111;
+      --green: #111111;
+      --green-light: #333333;
+      --gold: #111111;
+      --muted: #888888;
+      --border: #e0e0e0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--cream);
+      color: var(--dark);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      background: #111111;
+      color: white;
+      padding: 60px 40px 50px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: 20%;
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .header-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .studio-name {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .studio-name span {
+      color: #ffffff;
+      opacity: 0.55;
+    }
+
+    .doc-title {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      opacity: 0.75;
+      margin-bottom: 20px;
+    }
+
+    .header-tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: rgba(255,255,255,0.75);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+    }
+
+    /* Main content */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 40px 80px;
+    }
+
+    .intro-note {
+      background: #f7f7f7;
+      border-left: 3px solid #111111;
+      padding: 18px 24px;
+      margin-bottom: 48px;
+      border-radius: 0 6px 6px 0;
+      font-size: 14px;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* Section */
+    .section {
+      margin-bottom: 44px;
+      padding-bottom: 44px;
+      border-bottom: 1px solid var(--border);
+      opacity: 0;
+      transform: translateY(16px);
+      animation: fadeUp 0.5s ease forwards;
+    }
+
+    .section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section:nth-child(1) { animation-delay: 0.05s; }
+    .section:nth-child(2) { animation-delay: 0.1s; }
+    .section:nth-child(3) { animation-delay: 0.15s; }
+    .section:nth-child(4) { animation-delay: 0.2s; }
+    .section:nth-child(5) { animation-delay: 0.25s; }
+    .section:nth-child(6) { animation-delay: 0.3s; }
+    .section:nth-child(7) { animation-delay: 0.35s; }
+    .section:nth-child(8) { animation-delay: 0.4s; }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .section-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 13px;
+      color: #aaaaaa;
+      font-weight: 700;
+      letter-spacing: 1px;
+      min-width: 28px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #111111;
+      line-height: 1.3;
+    }
+
+    .section-body {
+      font-size: 15px;
+      color: #3d3d3a;
+      padding-left: 44px;
+    }
+
+    .section-body p + p {
+      margin-top: 12px;
+    }
+
+    /* Key info callouts */
+    .callout {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: #f7f7f7;
+      border: 1px solid #dddddd;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-top: 14px;
+      font-size: 14px;
+      color: #333333;
+    }
+
+    .callout-icon {
+      font-size: 16px;
+      margin-top: 1px;
+      flex-shrink: 0;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.45);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: rgba(255,255,255,0.75);
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 40px 24px 36px; }
+      main { padding: 40px 24px 60px; }
+      .section-body { padding-left: 0; }
+      .section-header { flex-direction: column; gap: 4px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="doc-title">Recurring Membership Agreement</div>
+      <div class="studio-name">My Swing <span>Studio</span></div>
+      <div class="header-tag">Membership Terms &amp; Conditions</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="intro-note">
+      Please read these terms carefully. By enrolling in a membership, you agree to the recurring billing and cancellation policies outlined below.
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">Membership &amp; Automatic Renewal</h2>
+      </div>
+      <div class="section-body">
+        <p>This Membership is a recurring subscription that automatically renews each month until canceled in accordance with these Terms. By enrolling, Member expressly agrees to automatic renewal and recurring monthly charges as described below. An acknowledgment of these terms will be provided at the time of enrollment.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Recurring Billing – Charged on the 1st of Each Month</h2>
+      </div>
+      <div class="section-body">
+        <p>Membership dues are billed automatically on the 1st day of each calendar month. Member authorizes My Swing Studio ("Studio") to charge the payment method on file on the 1st of each month. If enrollment occurs mid-month, the first payment may be prorated. All future payments will occur on the 1st.</p>
+        <p>Member is responsible for maintaining valid payment information. If payment fails, access to booking privileges may be suspended and outstanding balances remain due and payable.</p>
+        <div class="callout">
+          <span class="callout-icon">📅</span>
+          <span>Billing occurs automatically on the <strong>1st of every month</strong>. Keep your payment information current to avoid service interruptions.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Cancellation Policy – 30 Days' Written Notice Required</h2>
+      </div>
+      <div class="section-body">
+        <p>To cancel a membership, Member must submit written notice via email to the Studio at least 30 days prior to the next billing date (the 1st of the month). Billing will continue during the 30-day notice period. Verbal notice is not valid.</p>
+        <p>Members may cancel using the same method used to enroll or by written request to the Studio.</p>
+        <div class="callout">
+          <span class="callout-icon">✉️</span>
+          <span><strong>Written notice only.</strong> Cancellation requests must be submitted via email at least 30 days before the next billing date. Verbal cancellations will not be honored.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Freeze Policy</h2>
+      </div>
+      <div class="section-body">
+        <p>Members are permitted one (1) freeze per 12-month period for a maximum of 30 consecutive days. Freeze requests must be submitted in writing prior to the requested freeze start date and before the upcoming billing date. Freezes may not be applied retroactively.</p>
+        <p>At the conclusion of the freeze period, billing will automatically resume on the next scheduled billing date. Additional freezes are not permitted except where required by applicable law (such as military deployment or documented medical incapacity). This limited freeze policy is provided as a courtesy and may not be combined or extended.</p>
+        <div class="callout">
+          <span class="callout-icon">❄️</span>
+          <span>1 freeze per year · Maximum 30 consecutive days · Must be requested in writing before the billing date</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-number">05</span>
+        <h2 class="section-title">No Rollovers</h2>
+      </div>
+      <div class="section-body">
+        <p>Unused sessions, hours, or benefits do not roll over to future months and expire at the end of each billing cycle. Membership pricing reflects monthly access and consistent usage.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-number">06</span>
+        <h2 class="section-title">Statutory Cancellation Rights (If Applicable)</h2>
+      </div>
+      <div class="section-body">
+        <p>If applicable, Member may have a right to cancel within a limited number of days after signing. Any such cancellation must be delivered in writing to the Studio. After any applicable statutory cancellation period, fees are non-refundable unless otherwise required by law.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-number">07</span>
+        <h2 class="section-title">Studio Policies &amp; Conduct</h2>
+      </div>
+      <div class="section-body">
+        <p>The Studio reserves the right to modify operating hours, adjust scheduling policies, and suspend or terminate membership for misconduct or policy violations. Members must adhere to booking and cancellation policies for reserved sessions.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-number">08</span>
+        <h2 class="section-title">Governing Law</h2>
+      </div>
+      <div class="section-body">
+        <p>This Agreement shall be governed by the laws of the State of California. If any provision is found unenforceable, the remainder of the Agreement shall remain in effect.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <strong>My Swing Studio</strong> &nbsp;·&nbsp; Membership Terms &amp; Conditions &nbsp;·&nbsp; Governed by the laws of the State of California
+  </footer>
+
+</body>
+</html>
