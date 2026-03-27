@@ -916,16 +916,16 @@ html {
 @media only screen and (max-width: 31.875rem) {
   #hero-1950 .cs-promo-banner {
     position: relative;
-    top: auto;
-    left: auto;
+    top: 25%;
+    left: 12.5%;
     transform: none;
-    width: 100%;
+    width: 75%;
+    min-width: 300px;
     max-width: 100%;
     border-radius: 0;
-    border-left: none;
-    border-right: none;
   }
   #hero-1950 .cs-container {
+    display: flex;
     justify-content: flex-start;
   }
 }
