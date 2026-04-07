@@ -1013,13 +1013,11 @@ html {
     align-items: center;
     justify-content: center;
   }
-
   #hero-1950 .cs-container {
     justify-content: center;
     align-items: center;
     height: 100%;
   }
-
   #hero-1950 .cs-promo-banner {
     position: relative;
     top: auto;
@@ -1033,89 +1031,18 @@ html {
   }
 }
 
-@media only screen and (max-width: 326px) {
-  #hero-1950 {
-    align-items: center;
-    justify-content: center;
+@media only screen and (max-width: 25rem) {
+  #hero-1950 .cs-promo-title {
+    font-size: clamp(0.7rem, 6cqi, 1.2rem);
   }
-
-  #hero-1950 .cs-container {
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  #hero-1950 .cs-promo-subtitle {
+    font-size: clamp(0.6rem, 3.5cqi, 0.9rem);
   }
-
+  #hero-1950 .cs-promo-dates {
+    font-size: clamp(0.4rem, 2cqi, 0.6rem);
+  }
   #hero-1950 .cs-promo-banner {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    width: 75%;
-    min-width: 300px;
-    max-width: 100%;
-    border-radius: 0;
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (max-width: 317px) {
-  #hero-1950 {
-    align-items: center;
-    justify-content: center;
-  }
-
-  #hero-1950 .cs-container {
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-
-  #hero-1950 .cs-promo-banner {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    width: 75%;
-    min-width: 300px;
-    max-width: 100%;
-    border-radius: 0;
-    margin: 0 auto;
-  }
-
-  @media only screen and (max-width: 265px) {
-  #hero-1950 {
-    align-items: center;
-    justify-content: center;
-  }
-
-  #hero-1950 .cs-container {
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-
-  #hero-1950 .cs-promo-banner {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    width: 75%;
-    min-width: 300px;
-    max-width: 100%;
-    border-radius: 0;
-    margin: 0 auto;
-  }
-
-  #hero-1950 .cs-promo-banner {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    width: 75%;
     min-width: 200px;
-    max-width: 100%;
-    border-radius: 0;
-    margin: 0 auto;
   }
 }
 /* Tablet - 768px */
@@ -4526,4 +4453,5 @@ body.dark-mode .cs-button-solid:before {
 
 .membership-card li {
   margin: 1rem 0;
+}
 }
