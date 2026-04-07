@@ -905,7 +905,7 @@ html {
 
 @media only screen and (max-width: 69.5rem) {
   #hero-1950 .cs-promo-banner {
-    width: clamp(280px, 55vw, 420px);
+    width: clamp(280px, 75vw, 420px);
   }
 }
 
@@ -945,7 +945,7 @@ html {
 }
 
 #hero-1950 .cs-promo-title {
-  font-size: clamp(0.9rem, 8cqi, 2rem);
+  font-size: clamp(0.9rem, 7cqi, 2rem);
   font-weight: 900;
   color: #fff;
   margin: 0;
@@ -969,7 +969,7 @@ html {
 }
 
 #hero-1950 .cs-promo-dates {
-  font-size: clamp(0.5rem, 2.5cqi, 0.75rem);
+  font-size: clamp(0.5rem, 3.5cqi, 0.75rem);
   color: #fff;
   margin: 0;
   letter-spacing: 0.1em;
@@ -1023,7 +1023,7 @@ html {
     top: auto;
     left: auto;
     transform: none;
-    width: 75%;
+    width: 100%;
     min-width: 300px;
     max-width: 100%;
     border-radius: 0;
@@ -1033,13 +1033,13 @@ html {
 
 @media only screen and (max-width: 25rem) {
   #hero-1950 .cs-promo-title {
-    font-size: clamp(0.7rem, 6cqi, 1.2rem);
+    font-size: clamp(0.7rem, 6cqi, 1.5rem);
   }
   #hero-1950 .cs-promo-subtitle {
     font-size: clamp(0.6rem, 3.5cqi, 0.9rem);
   }
   #hero-1950 .cs-promo-dates {
-    font-size: clamp(0.4rem, 2cqi, 0.6rem);
+    font-size: clamp(0.4rem, 6cqi, 0.7rem);
   }
   #hero-1950 .cs-promo-banner {
     min-width: 200px;
@@ -4453,5 +4453,4 @@ body.dark-mode .cs-button-solid:before {
 
 .membership-card li {
   margin: 1rem 0;
-}
 }
